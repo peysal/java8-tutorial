@@ -10,14 +10,6 @@
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
-sourceSets {
-    main {
-        java {
-            srcDirs = ['src']
-        }
-    }
-}
-
 compileJava {
     //enable compilation in a separate daemon process
     options.fork = true
